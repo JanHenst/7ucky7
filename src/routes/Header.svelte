@@ -20,12 +20,12 @@
 				<a href="/">PROJECTS</a>
 			</li>
 			<li class="line">|</li>
-			<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
-				<a href="/about">ABOUT</a>
+			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
+				<a href="/">ABOUT</a>
 			</li>
 			<li class="line">|</li>
-			<li aria-current={$page.url.pathname === '/contact' ? 'page' : undefined}>
-				<a href="/contact">CONTACT</a>
+			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
+				<a href="/">CONTACT</a>
 			</li>
 		</ul>
 	</nav>
