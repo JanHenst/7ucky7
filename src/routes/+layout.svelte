@@ -7,7 +7,10 @@
     <Header />
 
     <main>
+        <!-- Content non mobile devices -->
         <slot />
+        <!-- Content mobile devices -->
+        <slot name="mobile" />
     </main>
 </div>
 

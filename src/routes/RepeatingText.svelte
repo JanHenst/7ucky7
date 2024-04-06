@@ -11,6 +11,6 @@
 <style>
     p {
         margin: 0;
-        font-size: clamp(0.25rem, 1.5vw, 1.4rem);
+        font-size: clamp(0.25rem, 1.35vw, 1.4rem);
     }
 </style>

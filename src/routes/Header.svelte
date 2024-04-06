@@ -16,16 +16,16 @@
 
 	<nav>
 		<ul>
-			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-				<a href="/">PROJECTS</a>
+			<li aria-current={$page.url.pathname === '/projects' ? 'page' : undefined}>
+				<a href="/projects">PROJECTS</a>
 			</li>
 			<li class="line">|</li>
-			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-				<a href="/">ABOUT</a>
+			<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
+				<a href="/about">ABOUT</a>
 			</li>
 			<li class="line">|</li>
-			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-				<a href="/">CONTACT</a>
+			<li aria-current={$page.url.pathname === '/contact' ? 'page' : undefined}>
+				<a href="/contact">CONTACT</a>
 			</li>
 		</ul>
 	</nav>

@@ -6,10 +6,10 @@
 
 <svelte:head>
     <title>Home</title>
-    <meta name="description" content="7ucky7 website" />
+    <meta name="description" content="7ucky7 home page" />
 </svelte:head>
 
-<div class="main-container">
+<div>
     <img src={mainLogo} alt="Main logo" />
 
     <div class="repeating-text-container">
