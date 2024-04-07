@@ -2,6 +2,7 @@
 	import { page } from '$app/stores';
 	import logo from '$lib/images/headerLogo.svg';
 	import headerStars from '$lib/images/headerStars.svg';
+	export let isMobile = false;
 </script>
 
 <header>
@@ -17,15 +18,15 @@
 	<nav>
 		<ul>
 			<li aria-current={$page.url.pathname === '/projects' ? 'page' : undefined}>
-				<a href="/projects">PROJECTS</a>
+				<a href={!isMobile ? "/projects" : "#projects"}>PROJECTS</a>
 			</li>
 			<li class="line">|</li>
 			<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
-				<a href="/about">ABOUT</a>
+				<a href={!isMobile ? "/about" : "#about"}>ABOUT</a>
 			</li>
 			<li class="line">|</li>
 			<li aria-current={$page.url.pathname === '/contact' ? 'page' : undefined}>
-				<a href="/contact">CONTACT</a>
+				<a href={!isMobile ? "/contact" : "#contact"}>CONTACT</a>
 			</li>
 		</ul>
 	</nav>

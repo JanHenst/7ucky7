@@ -18,16 +18,16 @@
         align-items: center;
 
         @media screen and (max-width: 768px) {
-            flex-basis: calc(50%);
-            max-width: calc(50%);
+            flex-basis: calc(33.33% - 1rem);
+            max-width: calc(33.33% - 1rem);
         }
     }
 
     img {
-        width: clamp(8rem, 25vw, 20rem);
+        width: clamp(5rem, 20vw, 20rem);
     }
 
     p {
-        font-size: clamp(0.75rem, 2vw, 1.4rem);
+        font-size: clamp(0.5rem, 2.25vw, 1.4rem);
     }
 </style>

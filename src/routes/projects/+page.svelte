@@ -35,13 +35,13 @@
         column-gap: 2.5rem;
 
         @media screen and (max-width: 768px) {
-            column-gap: 0;
-            justify-content: center;
+            column-gap: 1rem;
+            /*justify-content: center;*/
         }
     }
 
     h1 {
         margin-bottom: 0.5rem;
-        font-size: clamp(1.5rem, 10vw, 5rem);
+        font-size: clamp(1.5rem, 7vw, 5rem);
     }
 </style>

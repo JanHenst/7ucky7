@@ -1,16 +1,34 @@
 <script>
+    import { onMount } from 'svelte';
     import Header from "./Header.svelte";
     import './styles.css';
+    import MobileContent from "./MobileContent.svelte";
+
+    let isMobile = false;
+
+    onMount(() => {
+        const checkMobile = () => {
+            isMobile = window.matchMedia('(max-width: 600px)').matches;
+        };
+
+        checkMobile();
+        window.addEventListener('resize', checkMobile);
+
+        return () => {
+            window.removeEventListener('resize', checkMobile);
+        };
+    });
 </script>
 
 <div class="app">
-    <Header />
+    <Header isMobile="{isMobile}" />
 
     <main>
-        <!-- Content non mobile devices -->
-        <slot />
-        <!-- Content mobile devices -->
-        <slot name="mobile" />
+        {#if !isMobile}
+            <slot />
+        {:else}
+            <MobileContent />
+        {/if}
     </main>
 </div>
 
